@@ -21,4 +21,8 @@ class PurchaseService(
     fun create(purchase: PurchaseModel) {
         purchaseRepository.save(purchase)
     }
+
+    fun getAll(): List<PurchaseModel> {
+        return purchaseRepository.findAll()
+    }
 }
