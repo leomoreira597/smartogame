@@ -19,7 +19,7 @@
 		8A422319FEAB469893E4B5DB /* bw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2ABD549F0764BA98E3EF5B6 /* bw.jpg */; };
 		8485F019872C4ED39EDDD96E /* fence.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C68C78047064D869F4E2EE1 /* fence.jpg */; };
 		C83B5D8516EC47CDB0058475 /* gate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46DABF9C2C844905911BB18A /* gate.jpg */; };
-		393F7050DB6A444BBA9600D8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0A893A96494A4C8DB19BCD /* icon.png */; };
+		EC9B7B0FD24E4F58ACEA6146 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62D03B71CF2540CEB3FD2F33 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		E2ABD549F0764BA98E3EF5B6 /* bw.jpg */ = {isa = PBXFileReference; name = "bw.jpg"; path = "../src/assets/imgs/bw.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		3C68C78047064D869F4E2EE1 /* fence.jpg */ = {isa = PBXFileReference; name = "fence.jpg"; path = "../src/assets/imgs/fence.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		46DABF9C2C844905911BB18A /* gate.jpg */ = {isa = PBXFileReference; name = "gate.jpg"; path = "../src/assets/imgs/gate.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5B0A893A96494A4C8DB19BCD /* icon.png */ = {isa = PBXFileReference; name = "icon.png"; path = "../src/assets/imgs/icon.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		62D03B71CF2540CEB3FD2F33 /* icon.png */ = {isa = PBXFileReference; name = "icon.png"; path = "../src/assets/imgs/icon.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +169,7 @@
 				E2ABD549F0764BA98E3EF5B6 /* bw.jpg */,
 				3C68C78047064D869F4E2EE1 /* fence.jpg */,
 				46DABF9C2C844905911BB18A /* gate.jpg */,
-				5B0A893A96494A4C8DB19BCD /* icon.png */,
+				62D03B71CF2540CEB3FD2F33 /* icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 				8A422319FEAB469893E4B5DB /* bw.jpg in Resources */,
 				8485F019872C4ED39EDDD96E /* fence.jpg in Resources */,
 				C83B5D8516EC47CDB0058475 /* gate.jpg in Resources */,
-				393F7050DB6A444BBA9600D8 /* icon.png in Resources */,
+				EC9B7B0FD24E4F58ACEA6146 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

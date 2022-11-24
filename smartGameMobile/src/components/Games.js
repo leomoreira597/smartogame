@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         color: "#000",
         fontSize: 18
     },
-    container: {
+    containerList: {
         flexDirection: "row",
         borderBottomWidth: 1,
         borderColor: "#BBB",
