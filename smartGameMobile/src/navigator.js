@@ -8,6 +8,7 @@ import DescriptionGame from "./screens/DescriptionGame";
 import Games from "./components/Games"
 import StepStack from "./components/StepStack";
 import ButtonDetails from "./components/ButtonDetails";
+import { Button, Icon } from "@rneui/base";
 
 
 const Stack = createStackNavigator();
@@ -16,8 +17,16 @@ const Tab = createBottomTabNavigator()
 
 const FirstNavigation = () => {
     return (
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="StorePage" component={TabNavigator} />
+        <Stack.Navigator screenOptions={{ headerStyle:{backgroundColor:"#F5523e"}, 
+        headerTintColor: "#FFF"  }}>
+            <Stack.Screen name="Store" component={Store} options={({ navigation }) =>{
+                return {
+                    title:"Smart Game", headerRight: () => (
+                        <Button onPress={() => navigation.navigate('Purchase')} type="clear" icon={<Icon name="add" size={25} color="#FFF" />} />
+                    )
+                }
+            } } />
+            <Stack.Screen name="Purchase" component={Purchase} />   
             <Stack.Screen name="ButtonDetails" component={ButtonDetails} />
             <Stack.Screen name="DetailsGame" component={DescriptionGame} />
             <Stack.Screen name="Game" component={Games} />
@@ -25,21 +34,6 @@ const FirstNavigation = () => {
     );
 }
 
-const TabNavigator = () => {
-    return (
-        <Tab.Navigator initialRouteName="Store"
-            screenOptions={({ route }) => ({
-                headerShown: false,
-                activeTintColor: 'red',
-                inactiveTintColor: 'blue',
-                labelStyle: { fontSize: 30 }
-            })}>
-
-            <Tab.Screen name="Store" component={Store} />
-            <Tab.Screen name="Conta" component={Purchase} />
-        </Tab.Navigator>
-    );
-}
 
 export default function Navigator(props) {
     return (
