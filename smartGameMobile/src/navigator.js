@@ -6,9 +6,9 @@ import Purchase from "./screens/Purchases";
 import { createStackNavigator } from '@react-navigation/stack';
 import DescriptionGame from "./screens/DescriptionGame";
 import Games from "./components/Games"
-import StepStack from "./components/StepStack";
 import ButtonDetails from "./components/ButtonDetails";
 import { Button, Icon } from "@rneui/base";
+import QRCodeScanner from "./components/QRCodeScanner"
 
 
 const Stack = createStackNavigator();
@@ -30,6 +30,7 @@ const FirstNavigation = () => {
             <Stack.Screen name="ButtonDetails" component={ButtonDetails} />
             <Stack.Screen name="DetailsGame" component={DescriptionGame} />
             <Stack.Screen name="Game" component={Games} />
+            <Stack.Screen name="QRCode" component={QRCodeScanner} />
         </Stack.Navigator>
     );
 }

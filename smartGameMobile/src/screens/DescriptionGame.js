@@ -72,6 +72,13 @@ export default function DescriptionGame(props) {
                         </Text>
                     </View>
                 </TouchableOpacity>
+                <TouchableOpacity onPress={() => props.navigation.navigate("QRCode")}>
+                    <View style={styles.buttonQR}>
+                        <Text style={styles.textButton}>
+                            Aplicar Desconto
+                        </Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
 
@@ -122,6 +129,14 @@ const styles = StyleSheet.create({
     },
     buttonPurchase: {
         backgroundColor: "#00B500",
+        height: 50,
+        width: 100,
+        borderRadius: 10,
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    buttonQR: {
+        backgroundColor: "#00F",
         height: 50,
         width: 100,
         borderRadius: 10,
