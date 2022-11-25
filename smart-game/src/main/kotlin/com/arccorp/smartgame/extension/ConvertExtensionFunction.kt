@@ -3,6 +3,7 @@ package com.arccorp.smartgame.extension
 import com.arccorp.smartgame.controller.request.PostPurchaseRequest
 import com.arccorp.smartgame.controller.response.LocalResponse
 import com.arccorp.smartgame.controller.response.ProductResponse
+import com.arccorp.smartgame.controller.response.PurchaseResponse
 import com.arccorp.smartgame.models.LocalModel
 import com.arccorp.smartgame.models.ProductModel
 import com.arccorp.smartgame.models.PurchaseModel
@@ -29,5 +30,12 @@ fun LocalModel.toResponse():LocalResponse{
 fun PostPurchaseRequest.toPurshaseModel(product: ProductModel): PurchaseModel{
     return PurchaseModel(
         product = product
+    )
+}
+
+fun PurchaseModel.toResponse():PurchaseResponse{
+    return  PurchaseResponse(
+        id = this.id,
+        product = this.product
     )
 }
